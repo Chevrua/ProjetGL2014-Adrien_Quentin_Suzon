@@ -1,0 +1,63 @@
+format 76
+
+classcanvas 128008 class_ref 128136 // Eleve
+  class_drawing_mode default show_context_mode default show_stereotype_properties default
+  xyz 21.2 161.5 2000
+end
+usecasecanvas 128264 usecase_ref 128264 // Se connecter
+  xyzwh 131.1 175.5 3005 69 37 label_xy 130 206
+end
+subject 128648 "Portail de connexion"
+  xyzwh 114.6 23 2000 129 232
+usecasecanvas 128776 usecase_ref 128392 // Authentification
+  xyzwh 151.6 72.4 3005 64 32 label_xy 147 105
+end
+subject 129032 "Interface Elève"
+  xyzwh 336.4 12.8 2000 473 393
+usecasecanvas 129160 usecase_ref 128520 // Accueil
+  xyzwh 349.5 155.2 3005 64 32 label_xy 364 188
+end
+usecasecanvas 129288 usecase_ref 128648 // Trimestre 1
+  xyzwh 454.1 85.6 3005 64 32 label_xy 458 119
+end
+usecasecanvas 129800 usecase_ref 128776 // Trimestre 2
+  xyzwh 460.8 159.1 3005 64 32 label_xy 464 191
+end
+usecasecanvas 129928 usecase_ref 128904 // Trimestre 3
+  xyzwh 461.2 235.6 3005 64 32 label_xy 465 266
+end
+usecasecanvas 130568 usecase_ref 129032 // Afficher Bulletin
+  xyzwh 570.7 163.4 3005 64 32 label_xy 565 195
+end
+usecasecanvas 131208 usecase_ref 129160 // Imprimer
+  xyzwh 714 160.6 3005 64 32 label_xy 725 192
+end
+usecasecanvas 131464 usecase_ref 129288 // Affichage prof
+  xyzwh 351.2 267.8 3005 64 32 label_xy 347 299
+end
+line 128392 --->
+  from ref 128008 z 3006 to ref 128264
+simplerelationcanvas 128904 simplerelation_ref 128136
+  decenter_begin 171
+  from ref 128776 z 3006 to ref 128264
+end
+line 130056 --->
+  from ref 128264 z 3006 to ref 129160
+line 130184 --->
+  from ref 129160 z 3006 to ref 129288
+line 130312 --->
+  from ref 129160 z 3006 to ref 129800
+line 130440 --->
+  from ref 129160 z 3006 to ref 129928
+line 130696 --->
+  from ref 129288 z 3006 to ref 130568
+line 130824 --->
+  from ref 129800 z 3006 to ref 130568
+line 130952 --->
+  from ref 129928 z 3006 to ref 130568
+line 131336 --->
+  from ref 130568 z 3006 to ref 131208
+simplerelationcanvas 131592 simplerelation_ref 128264
+  from ref 131464 z 3006 to ref 129160
+end
+end
