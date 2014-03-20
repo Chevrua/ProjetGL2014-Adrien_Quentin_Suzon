@@ -1,0 +1,11 @@
+window_sizes 1920 1018 450 1350 720 82
+diagrams
+  active  usecasediagram_ref 128136 // Eleve
+    1464 862 130 4 0 0
+end
+show_stereotypes
+selected usecasediagram_ref 128136 // Eleve
+open
+  usecase_ref 128136 // Eleve
+end
+end
