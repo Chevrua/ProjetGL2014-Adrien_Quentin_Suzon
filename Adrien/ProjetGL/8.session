@@ -1,11 +1,26 @@
-window_sizes 1920 1018 450 1350 720 82
+window_sizes 1920 1018 450 1350 864 80
 diagrams
   active  usecasediagram_ref 128136 // Eleve
-    1464 862 130 4 0 0
+    1464 864 130 4 0 0
+  usecasediagram_ref 134792 // ProfPrinc
+    1167 689 130 4 240 0
 end
 show_stereotypes
-selected usecasediagram_ref 128136 // Eleve
-open
+marked
+  usecase_ref 129288 // Affichage prof
+  usecase_ref 129160 // Imprimer
+  usecase_ref 129032 // Afficher Bulletin
+  usecase_ref 128904 // Trimestre 3
+  usecase_ref 128648 // Trimestre 1
+  usecase_ref 128776 // Trimestre 2
+  usecase_ref 128520 // Accueil
+  usecase_ref 128392 // Authentification
+  usecase_ref 128264 // Se connecter
+  class_ref 128136 // Eleve
   usecase_ref 128136 // Eleve
+end
+selected usecase_ref 128136 // Eleve
+open
+  usecaseview_ref 128136 // Eleve
 end
 end

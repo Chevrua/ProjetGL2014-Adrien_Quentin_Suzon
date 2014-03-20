@@ -1,0 +1,100 @@
+format 76
+
+usecasecanvas 128008 usecase_ref 128648 // Trimestre 1
+  xyzwh 522.6 343.1 3005 64 32 label_xy 526.5 379.5
+end
+usecasecanvas 128136 usecase_ref 136456 // GestionNotes
+  xyzwh 736.1 409.5 3005 64 32 label_xy 736.5 441.5
+end
+subject 128264 "Affichage des notes d'une classe"
+  color transparent  xyzwh 358 313 2000 472 292
+usecasecanvas 128392 usecase_ref 136200 // SelectionnerClasse
+  xyzwh 190.9 457.5 3005 64 32 label_xy 176.5 489.5
+end
+subject 128520 "Portail de connexion"
+  xyzwh 104.5 55.9 2000 165 259
+usecasecanvas 128648 usecase_ref 128776 // Trimestre 2
+  xyzwh 514.5 408.6 3005 64 32 label_xy 521.5 444.5
+end
+usecasecanvas 128904 usecase_ref 128392 // Authentification
+  xyzwh 139.5 104.5 3005 67 33 label_xy 137.5 137.5
+end
+usecasecanvas 129032 usecase_ref 136072 // Modifier
+  xyzwh 631.3 407.4 3005 64 32 label_xy 642.5 438.5
+end
+usecasecanvas 129160 usecase_ref 128904 // Trimestre 3
+  xyzwh 525.1 477.2 3005 64 32 label_xy 528.5 515.5
+end
+usecasecanvas 129288 usecase_ref 128264 // Se connecter
+  xyzwh 121 195.5 3005 73 39 label_xy 124.5 231.5
+end
+subject 129416 "Interface Prof"
+  xyzwh 49.6 346.1 2000 267 294
+usecasecanvas 129544 usecase_ref 136328 // AfficherListeClasse
+  xyzwh 193 569.5 3005 64 32 label_xy 177.5 601.5
+end
+usecasecanvas 129672 usecase_ref 128520 // Accueil
+  xyzwh 72 458.5 3005 65 31 label_xy 87.5 492
+end
+classcanvas 131336 class_ref 134792 // ProfPrincipal
+  class_drawing_mode default show_context_mode default show_stereotype_properties default
+  xyz 11.5 189 3010
+end
+subject 131592 "AffichageClasseProfPrinc"
+  xyzwh 333 629.8 2000 157 139
+usecasecanvas 131720 usecase_ref 136712 // SelectionMatière
+  xyzwh 375.6 701.6 3005 64 32 label_xy 368 732
+end
+usecasecanvas 132232 usecase_ref 136840 // AfficheNotes
+  xyzwh 395.6 417.1 3010 64 32 label_xy 397 449
+end
+usecasecanvas 133000 usecase_ref 136968 // SaisirAppréciations
+  xyzwh 738.6 477.1 3005 64 32 label_xy 725 508
+end
+usecasecanvas 133256 usecase_ref 137096 // CalculMoy
+  xyzwh 733.3 339.8 3005 64 32 label_xy 740 371
+end
+simplerelationcanvas 129800 simplerelation_ref 134920
+  from ref 129032 z 3006 to ref 128008
+end
+simplerelationcanvas 129928 simplerelation_ref 134792
+  from ref 129544 z 3006 to ref 128392
+end
+line 130056 --->
+  from ref 129672 z 3006 to ref 128392
+simplerelationcanvas 130184 simplerelation_ref 135176
+  from ref 129032 z 3006 to ref 129160
+end
+simplerelationcanvas 130312 simplerelation_ref 128136
+  decenter_begin 171
+  from ref 128904 z 3006 to ref 129288
+end
+line 130440 --->
+  from ref 129288 z 3006 to ref 129672
+simplerelationcanvas 130952 simplerelation_ref 135048
+  from ref 129032 z 3006 to ref 128648
+end
+simplerelationcanvas 131080 simplerelation_ref 135304
+  from ref 128136 z 3006 to ref 129032
+end
+line 131464 --->
+  from ref 131336 z 3011 to ref 129288
+line 131848 --->
+  from ref 128392 z 3006 to ref 131720
+line 132360 --->
+  from ref 132232 z 3011 to ref 128008
+line 132488 --->
+  from ref 132232 z 3011 to ref 128648
+line 132616 --->
+  from ref 132232 z 3011 to ref 129160
+line 132744 --->
+  from ref 128392 z 3011 to ref 132232
+line 132872 --->
+  from ref 131720 z 3011 to ref 132232
+simplerelationcanvas 133128 simplerelation_ref 135944
+  from ref 133000 z 3006 to ref 129032
+end
+simplerelationcanvas 133384 simplerelation_ref 136072
+  from ref 133256 z 3006 to ref 128136
+end
+end

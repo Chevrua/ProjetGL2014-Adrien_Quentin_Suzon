@@ -2,38 +2,41 @@ format 76
 
 classcanvas 128008 class_ref 128136 // Eleve
   class_drawing_mode default show_context_mode default show_stereotype_properties default
-  xyz 21.2 161.5 2000
+  xyz 21 161.1 2000
 end
 usecasecanvas 128264 usecase_ref 128264 // Se connecter
-  xyzwh 131.1 175.5 3005 69 37 label_xy 130 206
+  xyzwh 138.5 194.9 3005 69 37 label_xy 137 225
 end
 subject 128648 "Portail de connexion"
-  xyzwh 114.6 23 2000 129 232
+  xyzwh 121.5 41.4 2000 129 232
 usecasecanvas 128776 usecase_ref 128392 // Authentification
-  xyzwh 151.6 72.4 3005 64 32 label_xy 147 105
+  xyzwh 156.6 89.6 3005 64 32 label_xy 154 123
 end
 subject 129032 "Interface Elève"
-  xyzwh 336.4 12.8 2000 473 393
+  xyzwh 272.6 48.1 2000 512 397
 usecasecanvas 129160 usecase_ref 128520 // Accueil
-  xyzwh 349.5 155.2 3005 64 32 label_xy 364 188
+  xyzwh 295.1 196 3005 64 32 label_xy 310 229
 end
 usecasecanvas 129288 usecase_ref 128648 // Trimestre 1
-  xyzwh 454.1 85.6 3005 64 32 label_xy 458 119
+  xyzwh 495.7 123 3005 64 32 label_xy 501 159
 end
 usecasecanvas 129800 usecase_ref 128776 // Trimestre 2
-  xyzwh 460.8 159.1 3005 64 32 label_xy 464 191
+  xyzwh 489.4 194.6 3005 64 32 label_xy 493 226
 end
 usecasecanvas 129928 usecase_ref 128904 // Trimestre 3
-  xyzwh 461.2 235.6 3005 64 32 label_xy 465 266
+  xyzwh 495.9 274.3 3005 64 32 label_xy 500 306
 end
 usecasecanvas 130568 usecase_ref 129032 // Afficher Bulletin
-  xyzwh 570.7 163.4 3005 64 32 label_xy 565 195
+  xyzwh 625 195.1 3005 64 32 label_xy 620 226
 end
 usecasecanvas 131208 usecase_ref 129160 // Imprimer
-  xyzwh 714 160.6 3005 64 32 label_xy 725 192
+  xyzwh 716 194.9 3005 64 32 label_xy 728 226
 end
 usecasecanvas 131464 usecase_ref 129288 // Affichage prof
-  xyzwh 351.2 267.8 3005 64 32 label_xy 347 299
+  xyzwh 304.3 294.3 3005 64 32 label_xy 300 327
+end
+usecasecanvas 132360 usecase_ref 136840 // AfficheNotes
+  xyzwh 400.6 193.4 3005 64 32 label_xy 401 225
 end
 line 128392 --->
   from ref 128008 z 3006 to ref 128264
@@ -43,21 +46,27 @@ simplerelationcanvas 128904 simplerelation_ref 128136
 end
 line 130056 --->
   from ref 128264 z 3006 to ref 129160
-line 130184 --->
-  from ref 129160 z 3006 to ref 129288
-line 130312 --->
-  from ref 129160 z 3006 to ref 129800
-line 130440 --->
-  from ref 129160 z 3006 to ref 129928
-line 130696 --->
-  from ref 129288 z 3006 to ref 130568
-line 130824 --->
-  from ref 129800 z 3006 to ref 130568
-line 130952 --->
-  from ref 129928 z 3006 to ref 130568
-line 131336 --->
-  from ref 130568 z 3006 to ref 131208
 simplerelationcanvas 131592 simplerelation_ref 128264
   from ref 131464 z 3006 to ref 129160
 end
+simplerelationcanvas 131720 simplerelation_ref 135432
+  from ref 130568 z 3006 to ref 129288
+end
+simplerelationcanvas 131848 simplerelation_ref 135560
+  from ref 130568 z 3006 to ref 129800
+end
+simplerelationcanvas 131976 simplerelation_ref 135688
+  from ref 130568 z 3006 to ref 129928
+end
+simplerelationcanvas 132232 simplerelation_ref 135816
+  from ref 131208 z 3006 to ref 130568
+end
+line 132488 --->
+  from ref 129160 z 3006 to ref 132360
+line 132616 --->
+  from ref 132360 z 3006 to ref 129288
+line 132744 --->
+  from ref 132360 z 3006 to ref 129800
+line 132872 --->
+  from ref 132360 z 3006 to ref 129928
 end
