@@ -1,9 +1,9 @@
 window_sizes 1920 1018 450 1350 864 80
 diagrams
-  active  usecasediagram_ref 128136 // Eleve
+  usecasediagram_ref 128136 // Eleve
     1464 864 130 4 0 0
-  usecasediagram_ref 134792 // ProfPrinc
-    1167 689 130 4 240 0
+  active  usecasediagram_ref 134792 // ProfPrinc
+    1464 864 100 4 24 0
 end
 show_stereotypes
 marked
@@ -19,8 +19,8 @@ marked
   class_ref 128136 // Eleve
   usecase_ref 128136 // Eleve
 end
-selected usecase_ref 128136 // Eleve
+selected usecasediagram_ref 134792 // ProfPrinc
 open
-  usecaseview_ref 128136 // Eleve
+  usecase_ref 136584 // ProfPrinc
 end
 end
