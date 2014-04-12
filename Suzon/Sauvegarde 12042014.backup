@@ -4,7 +4,7 @@
 
 -- Dumped from database version 9.3.3
 -- Dumped by pg_dump version 9.3.3
--- Started on 2014-04-06 22:04:51
+-- Started on 2014-04-12 12:37:22
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -431,6 +431,17 @@ SELECT pg_catalog.setval('"Eleves_id_eleves_seq"', 400000000, true);
 --
 
 COPY "Matiere" (id_mat, "nomMatiere") FROM stdin;
+1	Mathématiques       
+2	Français            
+3	Histoire-Géographie 
+4	EPS                 
+5	Anglais             
+6	Espagnol            
+7	Allemand            
+8	SVT                 
+9	Sciences Physiques  
+10	Arts plastiques     
+11	Education Musicale  
 \.
 
 
@@ -440,7 +451,7 @@ COPY "Matiere" (id_mat, "nomMatiere") FROM stdin;
 -- Name: Matiere_id_mat_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('"Matiere_id_mat_seq"', 1, false);
+SELECT pg_catalog.setval('"Matiere_id_mat_seq"', 11, true);
 
 
 --
@@ -526,6 +537,10 @@ COPY "Relation_Classe_Prof_Mat" (id_r_c_p_m, id_r_p_m, id_classe) FROM stdin;
 --
 
 COPY "Relation_Prof_Mat" (id_r_p_m, id_prof, id_mat) FROM stdin;
+1	2	9
+2	2	8
+3	3	4
+4	5	5
 \.
 
 
@@ -535,7 +550,7 @@ COPY "Relation_Prof_Mat" (id_r_p_m, id_prof, id_mat) FROM stdin;
 -- Name: Relation_Prof_Mat_id_r_p_m_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('"Relation_Prof_Mat_id_r_p_m_seq"', 1, false);
+SELECT pg_catalog.setval('"Relation_Prof_Mat_id_r_p_m_seq"', 4, true);
 
 
 --
@@ -703,7 +718,7 @@ GRANT ALL ON SCHEMA public TO postgres;
 GRANT ALL ON SCHEMA public TO PUBLIC;
 
 
--- Completed on 2014-04-06 22:04:52
+-- Completed on 2014-04-12 12:37:22
 
 --
 -- PostgreSQL database dump complete
