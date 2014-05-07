@@ -4,7 +4,7 @@
 
 -- Dumped from database version 9.3.3
 -- Dumped by pg_dump version 9.3.3
--- Started on 2014-05-07 15:53:03
+-- Started on 2014-05-07 15:59:09
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -163,8 +163,6 @@ ALTER TABLE public.relation_prof_mat OWNER TO postgres;
 -- Data for Name: classe; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY classe (id_classe, id_profprcipal, nom) FROM stdin;
-\.
 
 
 --
@@ -173,8 +171,6 @@ COPY classe (id_classe, id_profprcipal, nom) FROM stdin;
 -- Data for Name: eleves; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY eleves (login, mdp, nom, prenom, datenaiss, adresse, id_parent, id_classe) FROM stdin;
-\.
 
 
 --
@@ -183,8 +179,6 @@ COPY eleves (login, mdp, nom, prenom, datenaiss, adresse, id_parent, id_classe) 
 -- Data for Name: matiere; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY matiere (id_mat, nommatiere) FROM stdin;
-\.
 
 
 --
@@ -193,8 +187,6 @@ COPY matiere (id_mat, nommatiere) FROM stdin;
 -- Data for Name: notes; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY notes (id_notes, id_eleve, id_matiere, note) FROM stdin;
-\.
 
 
 --
@@ -203,11 +195,9 @@ COPY notes (id_notes, id_eleve, id_matiere, note) FROM stdin;
 -- Data for Name: parent; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY parent (login, mdp, nom, prenom, email) FROM stdin;
-fanny.catala                            	12345678	CATALA              	Fanny               	fanny.catala@mail.com                                       
-sylvain.cavailles                       	12345678	CAVAILLES           	Sylvain             	sylvain.cavailles@mail.com                                  
-joann.conta                             	12345678	CONTA               	Joann               	joann.conta@mail.com                                        
-\.
+INSERT INTO parent VALUES ('fanny.catala                            ', 12345678, 'CATALA              ', 'Fanny               ', 'fanny.catala@mail.com                                       ');
+INSERT INTO parent VALUES ('sylvain.cavailles                       ', 12345678, 'CAVAILLES           ', 'Sylvain             ', 'sylvain.cavailles@mail.com                                  ');
+INSERT INTO parent VALUES ('joann.conta                             ', 12345678, 'CONTA               ', 'Joann               ', 'joann.conta@mail.com                                        ');
 
 
 --
@@ -216,14 +206,12 @@ joann.conta                             	12345678	CONTA               	Joann    
 -- Data for Name: professeur; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY professeur (login, mdp, nom, prenom, email) FROM stdin;
-christel.achin                          	12345678	ACHIN               	Christel            	christel.achin@mail.com                                     
-joelle.adler                            	12345678	ADLER               	Joelle              	joadler@mail.com                                            
-jeremie.amiach                          	12345678	AMIACH              	Jeremie             	jeremieamiach@mail.com                                      
-stephane.audouly                        	12345678	AUDOULY             	Stephane            	stephaudouly@mail.com                                       
-jean-claude.azieau                      	12345678	AZIEAU              	Jean-Claude         	jcazieau@mail.com                                           
-enying.ateba                            	12345678	ATEBA               	Enying              	enying.ateba@mail.com                                       
-\.
+INSERT INTO professeur VALUES ('christel.achin                          ', 12345678, 'ACHIN               ', 'Christel            ', 'christel.achin@mail.com                                     ');
+INSERT INTO professeur VALUES ('joelle.adler                            ', 12345678, 'ADLER               ', 'Joelle              ', 'joadler@mail.com                                            ');
+INSERT INTO professeur VALUES ('jeremie.amiach                          ', 12345678, 'AMIACH              ', 'Jeremie             ', 'jeremieamiach@mail.com                                      ');
+INSERT INTO professeur VALUES ('stephane.audouly                        ', 12345678, 'AUDOULY             ', 'Stephane            ', 'stephaudouly@mail.com                                       ');
+INSERT INTO professeur VALUES ('jean-claude.azieau                      ', 12345678, 'AZIEAU              ', 'Jean-Claude         ', 'jcazieau@mail.com                                           ');
+INSERT INTO professeur VALUES ('enying.ateba                            ', 12345678, 'ATEBA               ', 'Enying              ', 'enying.ateba@mail.com                                       ');
 
 
 --
@@ -232,8 +220,6 @@ enying.ateba                            	12345678	ATEBA               	Enying   
 -- Data for Name: relation_classe_prof_mat; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY relation_classe_prof_mat (id_r_c_p_m, id_r_p_m, id_classe) FROM stdin;
-\.
 
 
 --
@@ -242,8 +228,6 @@ COPY relation_classe_prof_mat (id_r_c_p_m, id_r_p_m, id_classe) FROM stdin;
 -- Data for Name: relation_prof_mat; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY relation_prof_mat (id_r_p_m, id_prof, id_mat) FROM stdin;
-\.
 
 
 --
@@ -402,7 +386,7 @@ GRANT ALL ON SCHEMA public TO postgres;
 GRANT ALL ON SCHEMA public TO PUBLIC;
 
 
--- Completed on 2014-05-07 15:53:03
+-- Completed on 2014-05-07 15:59:09
 
 --
 -- PostgreSQL database dump complete
