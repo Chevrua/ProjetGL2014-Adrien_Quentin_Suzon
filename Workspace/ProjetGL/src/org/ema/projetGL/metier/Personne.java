@@ -1,4 +1,4 @@
-package org.ema.projectGL.metier;
+package org.ema.projetGL.metier;
 public class Personne {
 	protected String nom;
 	protected String prenom;
@@ -12,7 +12,7 @@ public class Personne {
 public Personne(){
 	this.nom = "Default_Nom";
 	this.prenom = "Default_Prenom";
-	this.mdp = "00000000";
+	this.mdp = "0000";
 	this.adresse = "Default_Adresse";
 	this.dateNaiss="01/01/1900";
 	this.mail="Default.mail@mail.com";

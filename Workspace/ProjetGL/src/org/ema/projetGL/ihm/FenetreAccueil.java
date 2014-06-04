@@ -1,4 +1,4 @@
-package org.ema.projectGL.ihm;
+package org.ema.projetGL.ihm;
 import java.awt.Color;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
@@ -17,14 +17,13 @@ import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.UIManager;
 
-import org.ema.projectGL.bdd.GestionBdd;
-
-
+import org.ema.projetGL.bdd.GestionBdd;
 
 public class FenetreAccueil extends JFrame {
 	
-	private static final long serialVersionUID = 1L;
-	// public static void main(String[] args) {
+	
+
+	 // public static void main(String[] args) {
 	    //new FenetreAccueil();
 	//  }
 	  private JPanel container = new JPanel();

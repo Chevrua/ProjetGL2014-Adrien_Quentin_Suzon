@@ -1,11 +1,14 @@
-package org.ema.projectGL.bdd;
+package org.ema.projetGL.bdd;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import org.ema.projectGL.ihm.FenetreAccueil;
+import org.ema.projetGL.ihm.FenetreAccueil;
+
+
+
 
 public class GestionBdd {
 	private Connection conn;
@@ -14,9 +17,9 @@ public class GestionBdd {
 		
 		  try {
 			Class.forName("org.postgresql.Driver");	      	         
-			String url = "jdbc:postgresql://localhost:5432/Projet";
+			String url = "jdbc:postgresql://localhost:5432/BDD";
 		    String user = "postgres";
-		    String passwd = "admin";
+		    String passwd = "Ibm34ibM";
 		         
 		      this.conn = DriverManager.getConnection(url, user, passwd);
 		} catch (ClassNotFoundException e) {

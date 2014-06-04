@@ -1,4 +1,4 @@
-package org.ema.projectGL.metier;
+package org.ema.projetGL.metier;
 public class Matiere {
 	protected String nomMatiere;
 

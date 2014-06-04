@@ -1,4 +1,4 @@
-package org.ema.projectGL.bdd;
+package org.ema.projetGL.bdd;
 /*import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;

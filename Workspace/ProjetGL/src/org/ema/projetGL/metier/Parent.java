@@ -1,4 +1,4 @@
-package org.ema.projectGL.metier;
+package org.ema.projetGL.metier;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;

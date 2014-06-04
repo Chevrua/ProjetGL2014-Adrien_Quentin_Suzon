@@ -1,6 +1,6 @@
-package org.ema.projectGL.metier;
+package org.ema.projetGL.metier;
 
-import org.ema.projectGL.ihm.FenetreAccueil;
+import org.ema.projetGL.ihm.FenetreAccueil;
 
 public class Main {
 	

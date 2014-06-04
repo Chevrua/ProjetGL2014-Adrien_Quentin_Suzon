@@ -1,4 +1,4 @@
-package org.ema.projectGL.ihm;
+package org.ema.projetGL.ihm;
 import java.awt.BorderLayout;
 import java.awt.Color;
 
@@ -9,8 +9,8 @@ import javax.swing.JPanel;
 
 public class IntProf extends JFrame {
 
-	private static final long serialVersionUID = 1L;
-	private JButton bouton = new JButton("Salut !");
+	 
+	  private JButton bouton = new JButton("Salut !");
 	  private JButton bouton2 = new JButton("Bye bye !");
 	  private JPanel container = new JPanel();
 	  private JLabel label = new JLabel();
