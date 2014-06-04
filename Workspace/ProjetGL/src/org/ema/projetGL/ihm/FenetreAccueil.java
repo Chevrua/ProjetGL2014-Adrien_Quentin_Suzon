@@ -19,11 +19,12 @@ import javax.swing.UIManager;
 
 import org.ema.projetGL.bdd.GestionBdd;
 
+
+
 public class FenetreAccueil extends JFrame {
 	
-	
-
-	 // public static void main(String[] args) {
+	private static final long serialVersionUID = 1L;
+	// public static void main(String[] args) {
 	    //new FenetreAccueil();
 	//  }
 	  private JPanel container = new JPanel();

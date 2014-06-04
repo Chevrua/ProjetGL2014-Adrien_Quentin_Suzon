@@ -9,8 +9,8 @@ import javax.swing.JPanel;
 
 public class IntProf extends JFrame {
 
-	 
-	  private JButton bouton = new JButton("Salut !");
+	private static final long serialVersionUID = 1L;
+	private JButton bouton = new JButton("Salut !");
 	  private JButton bouton2 = new JButton("Bye bye !");
 	  private JPanel container = new JPanel();
 	  private JLabel label = new JLabel();

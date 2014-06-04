@@ -12,7 +12,7 @@ public class Personne {
 public Personne(){
 	this.nom = "Default_Nom";
 	this.prenom = "Default_Prenom";
-	this.mdp = "0000";
+	this.mdp = "00000000";
 	this.adresse = "Default_Adresse";
 	this.dateNaiss="01/01/1900";
 	this.mail="Default.mail@mail.com";

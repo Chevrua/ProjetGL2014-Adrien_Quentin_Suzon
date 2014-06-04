@@ -7,9 +7,6 @@ import java.sql.Statement;
 
 import org.ema.projetGL.ihm.FenetreAccueil;
 
-
-
-
 public class GestionBdd {
 	private Connection conn;
 	
@@ -17,9 +14,9 @@ public class GestionBdd {
 		
 		  try {
 			Class.forName("org.postgresql.Driver");	      	         
-			String url = "jdbc:postgresql://localhost:5432/BDD";
+			String url = "jdbc:postgresql://localhost:5432/Projet";
 		    String user = "postgres";
-		    String passwd = "Ibm34ibM";
+		    String passwd = "admin";
 		         
 		      this.conn = DriverManager.getConnection(url, user, passwd);
 		} catch (ClassNotFoundException e) {
