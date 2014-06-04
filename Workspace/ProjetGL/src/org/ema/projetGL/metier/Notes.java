@@ -1,4 +1,4 @@
-package org.ema.projetGL.metier;
+package org.ema.projectGL.metier;
 
 public class Notes {
 	protected int note;

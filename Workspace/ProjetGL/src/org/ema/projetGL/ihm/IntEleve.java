@@ -1,4 +1,4 @@
-package org.ema.projetGL.ihm;
+package org.ema.projectGL.ihm;
 import java.awt.BorderLayout;
 import java.awt.Color;
 
@@ -7,12 +7,12 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import org.ema.projetGL.bdd.GestionBdd;
+import org.ema.projectGL.bdd.GestionBdd;
 
 public class IntEleve extends JFrame {
 
-	 
-	  private JButton bouton = new JButton("Salut !");
+	private static final long serialVersionUID = 1L;
+	private JButton bouton = new JButton("Salut !");
 	  private JButton bouton2 = new JButton("Bye bye !");
 	  private JPanel container = new JPanel();
 	  private JLabel lblBonjoursMr = new JLabel();
