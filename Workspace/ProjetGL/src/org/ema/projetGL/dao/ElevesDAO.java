@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 import org.ema.projetGL.metier.Eleves;
 
-public abstract class ElevesDAO extends DAO<Eleves> {
+public abstract class ElevesDAO extends PersonneDAO {
 	  public ElevesDAO(Connection conn) {
 	    super(conn);
 	  }

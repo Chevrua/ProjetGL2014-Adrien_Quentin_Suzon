@@ -4,6 +4,10 @@ public class Matiere {
 
 //Chaque action doit avoir un impact dans la BDD
 
+public Matiere(){
+	this.nomMatiere = "Matière par défaut";
+}
+	
 public Matiere(String nomMatiere){
 	this.nomMatiere = nomMatiere;
 }

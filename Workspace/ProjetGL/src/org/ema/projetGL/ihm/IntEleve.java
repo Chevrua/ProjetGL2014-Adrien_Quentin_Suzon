@@ -35,9 +35,9 @@ public class IntEleve extends JFrame {
 	    container.add(Pbouton, BorderLayout.SOUTH);
 	     
 	    lblBonjoursMr.setText("Bonjours Mr : "+login);
-	    GestionBdd toto;
+	    
 		try {
-			toto = new GestionBdd();
+			GestionBdd toto = new GestionBdd();
 		//	lblClassName.setText("Votre classe : "+toto.GetClassName(login));
 		} catch (Exception e) {
 			e.printStackTrace();
