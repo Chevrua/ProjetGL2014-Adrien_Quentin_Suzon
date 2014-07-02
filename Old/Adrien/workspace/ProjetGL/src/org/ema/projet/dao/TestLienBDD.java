@@ -7,7 +7,7 @@ import org.ema.projet.metier.Personne;
 import org.ema.projet.bdd.GestionConnection;
 
 public class TestLienBDD {
-
+/*
 	public static void main(String[] args) {
 	
 		GestionConnection gestionBdd = new GestionConnection();
@@ -21,6 +21,6 @@ public class TestLienBDD {
         
         System.out.println("\n******************************************\n");
 
-	}
+	}*/
 
 }
